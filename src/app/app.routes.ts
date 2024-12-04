@@ -7,30 +7,30 @@ import { RentalDetailComponent } from './routes/rental-detail/rental-detail.comp
 import { HomeComponent } from './routes/home/home.component';
 
 export const routes: Routes = [
-    {
-        path : "home",
-        component: HomeComponent
-      },
-      {
-        path : "manage-customer",
-        component: CustomerComponent
-      },
-      {
-        path : "manage-item",
-        component: ItemComponent
-      },
-      {
-        path : "rental",
-        component: RentalComponent
-      },
-      {
-        path : "rental-details",
-        component: RentalDetailComponent
-      }
+  {
+    path: 'home',
+    component: HomeComponent,
+  },
+  {
+    path: 'manage-customer',
+    component: CustomerComponent,
+  },
+  {
+    path: 'manage-item',
+    component: ItemComponent,
+  },
+  {
+    path: 'rental',
+    component: RentalComponent,
+  },
+  {
+    path: 'rental-details',
+    component: RentalDetailComponent,
+  },
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
-    exports: [RouterModule]
-  })
-  export class AppRoutingModule { }
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
+})
+export class AppRoutingModule {}

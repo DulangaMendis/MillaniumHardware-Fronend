@@ -2,11 +2,11 @@
     <div class="form-container">
       <h1>Manage Customer</h1>
       <br>
-      <form>
-        <input type="text" id="customerId" placeholder="CustomerId" required>
-        <input type="text" id="customerName" placeholder="CustomerName" required>
-        <input type="text" id="city" placeholder="City" required>
-        <input type="text" id="contactNumber" placeholder="ContactNumber" required>
+      <form (ngSubmit)="manageCustomer()">
+        <input type="text" id="customerId" placeholder="CustomerId" [(ngModel)]="customer.customerId" required >
+        <input type="text" id="customerName" placeholder="CustomerName" required [(ngModel)]="customer.name">
+        <input type="text" id="city" placeholder="City" required [(ngModel)]="customer.city">
+        <input type="text" id="contact" placeholder="ContactNumber" required [(ngModel)]="customer.contact">
 
         <br><br>
         
