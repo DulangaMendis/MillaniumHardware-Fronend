@@ -1,0 +1,15 @@
+.navbar {
+    background-color: #857878; 
+  }
+  .navbar-brand, .nav-link {
+    color: #380766 !important; 
+  }
+  .navbar-brand:hover, .nav-link:hover {
+    color: #fff !important; 
+  }
+  .nav-link {
+    margin-right: 15px;
+  }
+  .navbar-toggler {
+    border: none; 
+  }
